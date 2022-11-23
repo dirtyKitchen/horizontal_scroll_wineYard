@@ -76,7 +76,6 @@ select {
 .container {
     padding-inline: 2em;
     margin-inline: auto;
-    max-width: 80rem;
 }
 
 /* Stlying for Screen Readers. Elements will not be visible on the browser but still available in DOM */
@@ -90,4 +89,57 @@ select {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* Custom CSS */
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+}
+
+.one {
+    background: #efdefe;
+}
+
+.two {
+    background: #a3f3d3;
+}
+
+.three {
+    background: #0bbaa0;
+}
+
+.four {
+    background: #00dfdf;
+}
+
+.wrapper {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.outer-wrapper {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
