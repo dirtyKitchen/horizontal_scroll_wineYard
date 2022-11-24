@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,51 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="custom.css">
 </head>
+
 <body>
- <div class="brand">
-    <h1 class="logo">Quotes</h1>
- </div>
- <div class="outer-wrapper">
-    <div class="wrapper">
-        <div class="slide one">
-            <p class="quote">Don't Be Distracted By Criticism. Remember, The Only Taste Of Success Some People Get Is To Take A Bite Out Of You</p>
-            <p class="author">Zig Ziglar</p>
-        </div>
-        <div class="slide two">
-            <p class="quote">The Greatest Glory In Living Lies Not In Never Falling, But In Rising Every Time We Fall.</p>
-            <p class="author">Nelson Mandela</p>
-        </div>
-        <div class="slide three">
-            <p class="quote">Success Seems To Be Connected With Action. Successful People Keep Moving. They Make Mistakes But They Don't Quit</p>
-            <p class="author">Conrad Hilton</p>
-        </div>
-        <div class="slide four" id="lastSlide">
-            <p class="quote">Success Is Not Final, Failure Is Not Fatal, It Is The Courage To Continue That Counts.</p>
-            <p class="author">Winston S Churchill</p>
+    <div class="brand">
+        <h1 class="logo">Quotes</h1>
+    </div>
+    <div class="outer-wrapper">
+        <div class="wrapper">
+
+            <div class="slide one">
+                <section class="forHover">
+                    <p class="quote">Don't Be Distracted By Criticism. Remember, The Only Taste Of Success Some People
+                        Get Is To Take A Bite Out Of You</p>
+                    <p class="author">Zig Ziglar</p>
+                </section>
+            </div>
+            <div class="slide two">
+                <section class="forHover">
+                    <p class="quote">The Greatest Glory In Living Lies Not In Never Falling, But In Rising Every Time We
+                        Fall.</p>
+                    <p class="author">Nelson Mandela</p>
+                </section>
+            </div>
+            <div class="slide three">
+                <section class="forHover">
+                    <p class="quote">Success Seems To Be Connected With Action. Successful People Keep Moving. They Make
+                        Mistakes But They Don't Quit</p>
+                    <p class="author">Conrad Hilton</p>
+                </section>
+
+            </div>
+            <div class="slide four" id="lastSlide">
+                <section class="forHover">
+                    <p class="quote">Success Is Not Final, Failure Is Not Fatal, It Is The Courage To Continue That
+                        Counts.</p>
+                    <p class="author">Winston S Churchill</p>
+                </section>
+
+            </div>
+            <div id="cursor"></div>
         </div>
     </div>
- </div>
- <div id="cursor"></div>
- <script src="carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="carousel.js"></script>
+    <script src="cursor.js"></script>
+    
 </body>
+
 </html>
