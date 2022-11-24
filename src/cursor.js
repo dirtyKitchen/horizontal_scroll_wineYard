@@ -1,11 +1,12 @@
 const mycursor = document.querySelector('#cursor')
 const forHover = document.querySelectorAll('.forHover')
-for (i = 0; i < forHover.length; i++){
+
+for (let i = 0; i < forHover.length; i++) {
     forHover[i].addEventListener('click', _ => {
         console.log(forHover[i])
     })
 }
- 
+
 
 // position: absolute;
 // width: 50px;
